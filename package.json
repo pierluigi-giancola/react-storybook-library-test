@@ -1,0 +1,14 @@
+{
+  "name": "react-storybook-library-test",
+  "version": "0.0.1",
+  "description": "React Library + Storybook",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pierluigi.giancola@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
