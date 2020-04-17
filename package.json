@@ -1,14 +1,25 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "React Library + Storybook",
-  "main": "index",
-  "scripts": {
+  "main": "lib/index.js",
+    "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pierluigi.giancola@gmail.com",
   "license": "MIT",
   "dependencies": {
     "react": "^16.13.1"
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "es"
+  ]
 }
