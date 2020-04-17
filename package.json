@@ -1,10 +1,13 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "React Library + Storybook",
   "main": "lib/index.js",
-    "scripts": {
+  "module": "lib/index.js",
+  "scripts": {
     "build": "babel src --out-dir lib",
+    "build:production": "babel src --out-dir lib --env-name=production && cp src/index.d.ts lib",
+    "tool": "node ./tools/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pierluigi.giancola@gmail.com",
@@ -15,11 +18,26 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
-    "@babel/preset-react": "^7.9.4"
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "execa": "^4.0.0",
+    "fs-extra": "^9.0.0"
   },
   "files": [
     "lib",
     "dist",
     "es"
-  ]
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
