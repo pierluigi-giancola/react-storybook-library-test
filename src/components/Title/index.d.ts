@@ -4,4 +4,6 @@ export interface TitleProps {
     text: string;
   }
 
-declare class Title<As extends React.ElementType = 'h1'> {}
+declare class Title extends React.Component<TitleProps> {}
+
+export default Title

@@ -27,4 +27,6 @@ export interface ButtonProps {
     disabled?: boolean;
   }
 
-declare class Button<As extends React.ElementType = 'button'> {}
+declare class Button extends React.Component<ButtonProps> {}
+
+export default Button
