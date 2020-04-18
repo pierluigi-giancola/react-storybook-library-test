@@ -10,6 +10,13 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
 
 Plugins for removing propTypes as it benefits bandwidth
 https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
+# Gived Up
+Probably what I'm trying to do is bad execute.
+The fact that I use JavaScript for developing and TypeScript for type definitions is a huge pain, mostly because I don't know how to integrate Storybook with that kind of project setup. That said a lot of library do this double work, keeping js only for developement and ts for exposing types to Typescript and IDEs.
+[stackoverflow small disussion about this kind of problem](https://stackoverflow.com/questions/50463048/react-with-typescript-should-the-use-of-typescript-replace-proptypes-definition)
+Also is worth mentioning that strip off proptypes leave any JS project that use the library unable to type check which is sad.
+
+
 # Thing Discovered Step by Step:
 - in package.json the field `files` let you specify what files/folder to publish [stackoverflow](https://stackoverflow.com/questions/40795836/how-do-you-use-the-files-and-directories-properties-in-package-json)
 - in package.json the field `main` let you specify where your file with all the exports is. Default to `index.js` at root level [offical doc](https://docs.npmjs.com/files/package.json#main)
@@ -17,7 +24,7 @@ https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
 - *.d.ts files are equivalent to header file (\*.h) in C, as far as I understand they aren't mandatory but they're useful. They match exactly like .h files in C, so <_FileName_>.js needs <_FileName_>.d.ts.
 - Inspired by [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap/tree/master/tools) use a node script to build the library
 - One problem I found is duplication between PropTypes and \*.d.ts, they almost do the same thing: the first check types at runtime, the other at compile time. PropTypes should not be present in the library once published (don't know why but anyone does this way), so they're useful just for developement. Since I don't find anything (that really convice me) for generate .d.ts from PropTypes or viceversa, I stick with just \*.d.ts and no PropTypes. This way you can use this library in a TypeScript project with checking, in a JavaScript project you don't get the checking but at least the suggestions from your IDE.
-- I'm starting to notice the same problem as before, I'm duplicating my imports between index.js and index.d.ts and when exported as library only the \*.d.ts are used. I suspect I need them for developing (with Storybook)
+- I'm starting to notice the same problem as before, I'm duplicating my imports between index.js and index.d.ts and when exported as library only the \*.d.ts are used. I suspect I need them for developing (with Storybook) EDIT: YES I NEED IT FOR DEV.
 # Dev Dependency
 
 ## Building
