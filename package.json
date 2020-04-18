@@ -8,7 +8,9 @@
     "build": "babel src --out-dir lib",
     "build:production": "babel src --out-dir lib --env-name=production && cp src/index.d.ts lib",
     "tool": "node ./tools/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "pierluigi.giancola@gmail.com",
   "license": "MIT",
@@ -21,6 +23,11 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@react-bootstrap/babel-preset": "^1.2.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "execa": "^4.0.0",
     "fs-extra": "^9.0.0"
   },
