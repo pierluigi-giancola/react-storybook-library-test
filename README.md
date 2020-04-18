@@ -47,6 +47,7 @@ Also is worth mentioning that strip off proptypes leave any JS project that use 
 - [execa](https://www.npmjs.com/package/execa): utility for better interaction with shell commands
 - [fs-extra](https://www.npmjs.com/package/fs-extra): utility for better interaction with filesystem
 - [@storybook/addon-actions](https://www.npmjs.com/package/@storybook/addon-actions): See action (eg click)
+- [@storybook/addon-docs](https://www.npmjs.com/package/@storybook/addon-docs): Auto generate Docs
 - [@storybook/addon-links](https://www.npmjs.com/package/@storybook/addon-links): Allow to link between stories, useful for mocking a use flow (not our use case)
 - [@storybook/addons](https://www.npmjs.com/package/@storybook/addons): Let you load Addons, nothing fancy here.
 - [@storybook/react](https://www.npmjs.com/package/@storybook/react)
