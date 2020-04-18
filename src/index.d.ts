@@ -1,5 +1,9 @@
 // export Button from './components/Button';
 // export Title from "./components/Title";
+import Button, {ButtonProps} from './components/Button'
+import Title, {TitleProps} from './components/Title'
 
-export {default as Button, ButtonProps} from './components/Button'
-export {default as Title, TitleProps} from './components/Title'
+export {
+    Button, ButtonProps,
+    Title, TitleProps
+}
