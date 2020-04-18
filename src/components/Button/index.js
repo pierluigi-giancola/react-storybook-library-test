@@ -1,5 +1,7 @@
 import React from 'react'
+import Button from './Button'
+import ButtonGroup from './ButtonGroup'
 
-export default (props) => {
-    return <button {...props}>'Hello'</button>
-}
+Button.Group = ButtonGroup
+
+export default Button

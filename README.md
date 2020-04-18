@@ -25,8 +25,6 @@ https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
 - [@babel/core](https://babeljs.io/docs/en/next/babel-core.html)
 - [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env): Do some crazy stuff for browser support.
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react): Allow to transpile react.
-- [@babel/plugin-proposal-export-default-from](https://babeljs.io/docs/en/babel-plugin-proposal-export-default-from)
-- [@babel/plugin-proposal-export-namespace-from](https://babeljs.io/docs/en/babel-plugin-proposal-export-namespace-from)
 <!-- - [@babel/plugin-proposal-export-namespace-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-namespace-from): Let you write `export * as someIdentifier from "someModule";`
 - [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from): Let you write `export someIdentifier from "someModule";`
 `export someIdentifier, { namedIdentifier } from "someModule";` -->
