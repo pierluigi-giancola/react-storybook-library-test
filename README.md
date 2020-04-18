@@ -40,4 +40,9 @@ Also is worth mentioning that strip off proptypes leave any JS project that use 
 <!-- - [cherry-pick](https://www.npmjs.com/package/cherry-pick): build tool for generate proxy directories with package.json -->
 - [execa](https://www.npmjs.com/package/execa): utility for better interaction with shell commands
 - [fs-extra](https://www.npmjs.com/package/fs-extra): utility for better interaction with filesystem
+- [@storybook/addon-actions](https://www.npmjs.com/package/@storybook/addon-actions): See action (eg click)
+- [@storybook/addon-links](https://www.npmjs.com/package/@storybook/addon-links): Allow to link between stories, useful for mocking a use flow (not our use case)
+- [@storybook/addons](https://www.npmjs.com/package/@storybook/addons): Let you load Addons, nothing fancy here.
+- [@storybook/react](https://www.npmjs.com/package/@storybook/react)
+- [@storybook/storybook-deployer](https://www.npmjs.com/package/@storybook/storybook-deployer): Let you easily deploy on gh-pages.
 <!-- - [webpack](https://webpack.js.org/): to bundle minified version of the library, browser distributable -->
