@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.0.17",
+  "version": "0.1.0",
   "description": "React Library + Storybook",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "babel-loader": "^8.1.0",
     "execa": "^4.0.0",
     "fs-extra": "^9.0.0",
-    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2"
   },
   "files": [

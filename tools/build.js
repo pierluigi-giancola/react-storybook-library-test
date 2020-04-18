@@ -17,6 +17,8 @@ const step = (name, fn) => async () => {
     console.log('\x1b[36m', 'Built: ', '\x1b[32m', name, '\x1b[0m');
   };
 
+const copySass = () => shell(`mkdir -p ${libRoot} && cd ${srcRoot} && cp --parents -r ./components/**/*.scss ./styles ${libRoot} && cd ${__dirname}`);
+
 const copyTypes = () => shell(`mkdir -p ${libRoot} && cd ${srcRoot} && cp --parents ./components/**/*.d.ts ./index.d.ts ${libRoot} && cd ${__dirname}`);
 
 const shell = (cmd) =>
@@ -28,7 +30,8 @@ const shell = (cmd) =>
  */
 const buildEsm = step('es modules', async () => {
     await shell(`npx babel ${srcRoot} --out-dir ${libRoot} --env-name "esm"`);
-    await copyTypes();
+    copyTypes();
+    copySass();
   });
 
 clean()
