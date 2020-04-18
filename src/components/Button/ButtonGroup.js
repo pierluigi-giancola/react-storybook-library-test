@@ -1,5 +1,6 @@
 import React from 'react'
 
-export default ({title, children}) => {
-    return <div>{children}</div>
+export default (props) => {
+    console.log(props.complexObj.nested.nested.title)
+return <div>{props.children}</div>
 }

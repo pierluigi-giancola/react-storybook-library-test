@@ -27,8 +27,21 @@ export interface ButtonProps {
     disabled?: boolean;
   }
 
-export interface ButtonGroupProps {
+type Nested1 = {
   title: string
+} 
+
+type Nested2 = {
+  nested: Nested1
+}
+
+type ComplexObj = {
+  someOtherStuff: object,
+  nested: Nested2
+}
+export interface ButtonGroupProps {
+  title: string,
+  complexObj: ComplexObj
 }
 
 declare class ButtonGroup extends React.Component<ButtonGroupProps> {}

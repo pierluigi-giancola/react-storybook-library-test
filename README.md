@@ -17,7 +17,7 @@ https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
 - *.d.ts files are equivalent to header file (\*.h) in C, as far as I understand they aren't mandatory but they're useful. They match exactly like .h files in C, so <_FileName_>.js needs <_FileName_>.d.ts.
 - Inspired by [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap/tree/master/tools) use a node script to build the library
 - One problem I found is duplication between PropTypes and \*.d.ts, they almost do the same thing: the first check types at runtime, the other at compile time. PropTypes should not be present in the library once published (don't know why but anyone does this way), so they're useful just for developement. Since I don't find anything (that really convice me) for generate .d.ts from PropTypes or viceversa, I stick with just \*.d.ts and no PropTypes. This way you can use this library in a TypeScript project with checking, in a JavaScript project you don't get the checking but at least the suggestions from your IDE.
-
+- I'm starting to notice the same problem as before, I'm duplicating my imports between index.js and index.d.ts and when exported as library only the \*.d.ts are used. I suspect I need them for developing (with Storybook)
 # Dev Dependency
 
 ## Building
