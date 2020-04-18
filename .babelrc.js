@@ -13,10 +13,14 @@ module.exports = api => {
       ['@babel/preset-env',
         {
           modules: false,
-          loose: true,
+          loose: true
         }
       ],
       '@babel/preset-react'
+    ],
+    plugins: [
+      '@babel/plugin-proposal-export-namespace-from',
+      '@babel/plugin-proposal-export-default-from'
     ]
   };
 };

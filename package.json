@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "React Library + Storybook",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -18,8 +18,11 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@react-bootstrap/babel-preset": "^1.2.0",
     "execa": "^4.0.0",
     "fs-extra": "^9.0.0"
   },
