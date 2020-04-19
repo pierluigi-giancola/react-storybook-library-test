@@ -18,6 +18,8 @@ Add [semantic-release](https://github.com/semantic-release/semantic-release) to 
 CI is done with GithubAction, so when semantic-release ask what CI env, choose other.
 It gives you 2 tokens (GH_TOKENS and NPM_TOKENS) that need to be added as secret in github repo.
 
+Semantic-release work with body of commit: look [here](https://github.com/semantic-release/semantic-release#commit-message-format) for how to use it
+
 # Eslint & Prettier
 
 Eslint from [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage), I just use `npx eslint --init`
