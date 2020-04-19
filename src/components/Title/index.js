@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 import React from 'react'
 
-function Title ({text}) {
+function Title({ text }) {
     return <h1>{text}</h1>
 }
 

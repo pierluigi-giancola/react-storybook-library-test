@@ -10,6 +10,13 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
 
 Plugins for removing propTypes as it benefits bandwidth
 https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
+# Eslint & Prettier
+Eslint from [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage), I just use `npx eslint --init`
+
+Integrate Eslint with Prettier from [here](https://prettier.io/docs/en/integrating-with-linters.html#eslint).
+
+Now everytime I run eslint (eg `npx eslint --fix src`) prettier runs to fixing simple format errors.
+
 # StoryBook
 I've mantain the same project structure from `npx -p @storybook/cli sb init --type react`.
 
