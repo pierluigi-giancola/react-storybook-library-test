@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   stories: ['../stories/**/*.stories.jsx'],
@@ -6,7 +6,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-links',
     '@storybook/addon-docs',
-    '@storybook/addon-knobs/register'
+    '@storybook/addon-knobs/register',
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
@@ -17,10 +17,11 @@ module.exports = {
     config.module.rules.push({
       test: /\.(s[ac]ss|css)$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
+      exclude: /node_modules/,
       include: path.resolve(__dirname, '../'),
-    });
+    })
 
     // Return the altered config
-    return config;
-  }
-};
+    return config
+  },
+}

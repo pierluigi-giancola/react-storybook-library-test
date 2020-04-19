@@ -36,19 +36,7 @@ jobs:
           
     - name: Install Dependencies
       run: npm install --only=prod --prefer-offline --progress=false --no-audit
-      
-  # Publish storybook on gh-pages
-  publish-storybook:
-    name: Publish Storybook on GH Pages
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
 
-      - name: Publish
-        run: npm run deploy-storybook
-        
   # Publish npm
   publish-npm:
     name: Publish lib on npm
@@ -57,7 +45,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         env:

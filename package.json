@@ -9,8 +9,7 @@
     "build": "NODE_ENV=production node ./tools/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "semantic-release": "semantic-release"
   },
   "author": {
@@ -43,7 +42,6 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
-    "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^6.8.0",
