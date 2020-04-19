@@ -17,6 +17,14 @@
     "email": "pierluigi.giancola@gmail.com"
   },
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.13.1",
@@ -43,6 +51,8 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "execa": "^4.0.0",
     "fs-extra": "^9.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.6",
     "prettier": "^2.0.4",
     "prop-types": "^15.7.2",
     "sass-loader": "^8.0.2"
