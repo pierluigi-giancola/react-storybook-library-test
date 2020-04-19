@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React Library + Storybook",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -44,6 +44,7 @@
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
