@@ -11,6 +11,13 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
 Plugins for removing propTypes as it benefits bandwidth
 https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
 
+# CI
+
+Add [semantic-release](https://github.com/semantic-release/semantic-release) to manage versioning and publish on npm.
+`npx semantic-release-cli setup`
+CI is done with GithubAction, so when semantic-release ask what CI env, choose other.
+It gives you 2 tokens (GH_TOKENS and NPM_TOKENS) that need to be added as secret in github repo.
+
 # Eslint & Prettier
 
 Eslint from [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage), I just use `npx eslint --init`
