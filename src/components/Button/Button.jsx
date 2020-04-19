@@ -9,19 +9,14 @@ function Button({
 }) {
   const btnClass = classNames('blink-button', variant);
   return (
-    <button
-      {...props}
-      disabled={disabled}
-      type="button"
-      className={btnClass}
-    />
+    <button {...props} disabled={disabled} type="button" className={btnClass} />
   );
 }
 
 Button.propTypes = {
   /**
-     * Disables the Button, preventing mouse events
-     */
+   * Disables the Button, preventing mouse events
+   */
   disabled: PropTypes.bool,
   /** Theme to apply on the button. */
   variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'error']),

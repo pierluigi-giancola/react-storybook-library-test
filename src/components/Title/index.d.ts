@@ -1,8 +1,8 @@
 import * as React from 'react'
 
 export interface TitleProps {
-    text: string;
-  }
+  text: string
+}
 
 declare class Title extends React.Component<TitleProps> {}
 
