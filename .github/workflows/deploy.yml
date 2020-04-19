@@ -19,9 +19,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      
     - name: Bump patch version before checkout
       run: npm version patch
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    
+    #Checkout Again after version increase
     - uses: actions/checkout@v2
       
     - name: Cache node modules
