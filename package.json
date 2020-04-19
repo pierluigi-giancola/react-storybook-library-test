@@ -1,19 +1,21 @@
 {
   "name": "react-storybook-library-test",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React Library + Storybook",
   "main": "lib/index.js",
   "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "build:production": "babel src --out-dir lib --env-name=production && cp src/index.d.ts lib",
-    "tool": "node ./tools/build.js",
+    "build": "NODE_ENV=production node ./tools/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
-  "author": "pierluigi.giancola@gmail.com",
+  "author": {
+    "name": "Pierluigi Omar Giancola",
+    "email": "pierluigi.giancola@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",

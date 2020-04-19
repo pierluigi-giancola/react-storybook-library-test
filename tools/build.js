@@ -9,6 +9,8 @@ const libRoot = path.join(__dirname, '../lib');
 // const cjsRoot = path.join(libRoot, 'cjs');
 // const esRoot = path.join(libRoot, 'esm');
 
+console.log('\x1b[36m', 'Node Env: ', '\x1b[32m', process.env.NODE_ENV, '\x1b[0m')
+
 const clean = () => fse.existsSync(libRoot) && fse.removeSync(libRoot);
 
 const step = (name, fn) => async () => {
@@ -29,7 +31,7 @@ const shell = (cmd) =>
  * compiled es modules (but otherwise es5) to /es
  */
 const buildEsm = step('es modules', async () => {
-    await shell(`npx babel ${srcRoot} --out-dir ${libRoot} --env-name "esm"`);
+    await shell(`npx babel ${srcRoot} --out-dir ${libRoot} --env-name "production"`);
     copyTypes();
     copySass();
   });
