@@ -19,7 +19,8 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run build-storybook && npm run build"
     }
   },
   "lint-staged": {
