@@ -18,7 +18,9 @@ Add [semantic-release](https://github.com/semantic-release/semantic-release) to 
 CI is done with GithubAction, so when semantic-release ask what CI env, choose other.
 It gives you 2 tokens (GH_TOKENS and NPM_TOKENS) that need to be added as secret in github repo.
 
-Semantic-release work with body of commit: look [here](https://github.com/semantic-release/semantic-release#commit-message-format) for how to use it
+Semantic-release work with body of commit: look [here](https://github.com/semantic-release/semantic-release#commit-message-format) for how to use it.
+
+Or look in [official conventional commits](https://www.conventionalcommits.org)
 
 # Eslint & Prettier
 
