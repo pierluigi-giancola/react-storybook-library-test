@@ -17,6 +17,8 @@ Integrate Eslint with Prettier from [here](https://prettier.io/docs/en/integrati
 
 Now everytime I run eslint (eg `npx eslint --fix src`) prettier runs to fixing simple format errors.
 
+EDIT: **I don't need prettier at all**, it usually conflicts with eslint config leading to indentations problems etc.
+
 # StoryBook
 I've mantain the same project structure from `npx -p @storybook/cli sb init --type react`.
 

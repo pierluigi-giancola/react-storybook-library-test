@@ -1,8 +1,13 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Title({ text }) {
-    return <h1>{text}</h1>
+  // eslint-disable-next-line react/jsx-filename-extension
+  return <h1>{text}</h1>;
 }
 
-export default Title
+Title.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+export default Title;
