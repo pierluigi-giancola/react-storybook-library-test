@@ -11,6 +11,27 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
 Plugins for removing propTypes as it benefits bandwidth
 https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types -->
 
+# Steps to use it as your project
+
+clone the repository.
+
+open _package.json_ and change all the property you need to change:
+
+- name
+- description
+- author
+- license
+- repository
+- _other you want to change_
+
+run `npx semantic-release-cli setup` to configure your CI pipeline.
+
+Obviously `npm i`
+
+### Hooks and CI
+
+CI runs for branch **master** and **develop**
+
 # CI
 
 Add [semantic-release](https://github.com/semantic-release/semantic-release) to manage versioning and publish on npm.

@@ -19,8 +19,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run build-storybook && npm run build"
+      "pre-commit": "lint-staged; if git-branch-is develop; then npm run build && npm run build-storybook; fi;"
     }
   },
   "lint-staged": {
@@ -53,6 +52,7 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "execa": "^4.0.0",
     "fs-extra": "^9.0.0",
+    "git-branch-is": "^3.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.6",
     "prettier": "^2.0.4",
