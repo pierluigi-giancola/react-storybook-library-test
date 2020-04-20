@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o docs",
+    "deploy-storybook": "storybook-to-ghpages",
     "semantic-release": "semantic-release"
   },
   "author": {
@@ -19,7 +20,8 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged; if git-branch-is develop; then npm run build && npm run build-storybook; fi;"
+      "pre-commit": "lint-staged",
+      "pre-push": "if git-branch-is -r \"(master|develop)\"; then npm run deploy-storybook; fi;"
     }
   },
   "lint-staged": {
@@ -42,6 +44,7 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^6.8.0",
